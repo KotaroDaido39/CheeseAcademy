@@ -1,0 +1,380 @@
+/* ここから下に記載していく */
+/* リセットCSS */
+html,
+body {
+    width: 1200px;
+    /* ページ全体の幅を1200ピクセルに設定 */
+    margin: 0 auto;
+    /* 左右のマージンを自動で調整し、中央揃えにする */
+    font-size: 16px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    color: #222222;
+}
+
+/* ヘッダー */
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+}
+
+.header-inner ul {
+    margin: 50px 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* メインビジュアル */
+.mainvisual {
+    position: relative;
+    display: inline-block;
+    width: 1200px;
+    /* 画像のサイズに合わせてコンテナのサイズを設定 */
+}
+
+.mainvisual img {
+    width: 100%;
+    height: auto;
+}
+
+.mainvisual-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 5px;
+}
+
+.mainvisual-overlay p {
+    text-align: center;
+    font-size: 26px;
+}
+
+.mainvisual-overlay h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 60px 0px 30px 0px;
+    font-weight: bold;
+}
+
+/* セクション共通 */
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+
+/* ABOUT */
+.about h3 {
+    color: #ffd61a;
+    font-weight: bold;
+}
+
+.about .section-lead {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.about-content p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-content {
+    text-align: center;
+
+}
+
+.about-images {
+    margin: 80px 0 60px 0;
+    display: flex;
+    position: relative;
+}
+
+.about-images img {
+    width: 25%;
+}
+
+/* COURSE */
+.course-content {
+    background-color: #fafafa;
+}
+
+.course .section-title {
+    font-weight: bold;
+    margin: 60px 0 30px 0;
+
+}
+
+.course .overview {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-item {
+    width: 100%;
+    display: flex;
+}
+
+.course-item img {
+    width: 50%;
+}
+
+.course-item-explain {
+    margin: auto 0;
+    text-align: left;
+    width: 440px;
+    margin-left: 50px;
+}
+
+.course-item-explain h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+
+.course-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.course-item:nth-child(2) .course-item-explain {
+    margin-right: 50px;
+    text-align: left;
+}
+
+
+/* NEWS */
+.news h3 {
+    color: #ffd61a;
+    font-weight: bold;
+}
+
+.news .section-lead {
+    text-align: center;
+    font-size: 18px;
+    margin: 30px 0 60px 0;
+}
+
+.news-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-item {
+    width: 300px;
+    margin: 0 30px;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* ホバー時の影 */
+}
+
+.news-item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #888;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 60px;
+    background-color: #ffd61a;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    margin-top: 60px;
+}
+button:hover {
+    background-color: #ffea00;
+}
+
+/* ACCESS */
+.access {
+    background-color: #fafafa;
+}
+
+.access h3 {
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.access .section-lead{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.access-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.access-map {
+    width: 100%;
+}
+
+.access-info{
+    display: flex;
+    margin: 60px 0;
+    justify-content:center;
+}
+
+.access-info .access-title{
+    margin-right: 50px;
+}
+
+.access-info p {
+    margin-top: 30px;
+}
+
+/* CONTACT */
+.contact h3 {
+    font-weight: bold;
+}
+
+.contact .section-lead{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.contact .contact-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    width: 100;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 64px 10px 16px;
+    ;
+    
+}
+
+select,
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 328px;
+    height: 36px;
+    margin: 5px 0 5px 5px ;
+    border: 1px solid #ddd;
+}
+
+td {
+    border-top: 5px solid #707070; /* 上の線 */
+    border-bottom: 5px solid #707070; /* 下の線 */
+    vertical-align: top; /* 垂直方向の配置を上に設定 */
+    text-align: left; /* 水平方向の配置を左に設定 */
+}
+
+
+td:not(:last-child) {
+    border-right: 5px solid #707070; /* 右側の線 */
+}
+
+.custom-checkbox  {
+
+}
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px; /* チェックボックスの幅 */
+    height: 25px; /* チェックボックスの高さ */
+    background-color: #f0f0f0; /* 背景色 */
+    border: 2px solid #dcdcdc; /* 境界線の色と太さ */
+    border-radius: 5px; /* 角の丸み */
+    cursor: pointer; /* ホバー時のカーソルをポインターに */
+    vertical-align: middle; /* テキストとの垂直方向の位置を中央揃えに */
+    position: relative; /* アイコンの位置指定の基準点 */
+}
+
+.custom-checkbox:checked {
+    background-color: #4CAF50; /* チェック時の背景色 */
+    border-color: #4CAF50; /* チェック時の境界線の色 */
+}
+
+.custom-checkbox:checked:after {
+    content: '✔'; /* チェックマーク */
+    color: white; /* チェックマークの色 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* チェックマークのサイズ */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* ラベル間の余白 */
+}
+
+label:hover .custom-checkbox {
+    background-color: #e9e9e9; /* ホバー時の背景色 */
+}
+
+/* フッター */
+#footer {
+    margin-top: 140px;
+    background-color: #707070;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
